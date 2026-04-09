@@ -110,6 +110,7 @@ ul,ol{list-style:none}
 .vp-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-m)}
 .vp-screen{aspect-ratio:16/9;background:#1A1513;position:relative}
 #vEmbed{position:absolute;top:0;left:0;width:100%;height:100%;border:none;z-index:10}
+video#vEmbed{object-fit:contain;background:#000}
 .vp-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#2D221E,#1A1513)}
 .vp-placeholder .pi{width:70px;height:70px;background:var(--accent-glass);border:2px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);transition:background var(--tr)}
 .vp-placeholder .pi:hover{background:rgba(209, 92, 121, 0.25)}
