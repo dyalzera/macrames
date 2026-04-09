@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- Viewport otimizado para não permitir zoom acidental (ajuda muito o público 40+ no mobile) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="description" content="Área de Membros — Macramês de Sucesso" />
   <title>Macramês de Sucesso — Área de Membros</title>
@@ -23,7 +22,7 @@
         <span>Macramês <em>de Sucesso</em></span>
       </a>
       <div class="nav-mid">
-        <span style="display:none" id="navPct">5%</span>
+        <span style="display:none" id="navPct">0%</span>
         <div class="nav-pbar">
           <div class="nav-pfill" id="navPfill"></div>
         </div>
@@ -43,12 +42,11 @@
     </div>
   </nav>
 
-  <!-- WELCOME BANNER (Abaixo do menu, muito chamativo para as alunas) -->
+  <!-- WELCOME BANNER -->
   <div class="welcome">
     <div class="welcome-box">
-      <h1>Olá, seja muito bem-vinda! 🥰</h1>
-      <p>Seu acesso ao curso <strong>Macramês de Sucesso</strong> está liberado e as aulas já estão te esperando.
-      </p>
+      <h1>Olá, seja muito bem-vinda!</h1>
+      <p>Seu acesso ao curso <strong>Macramês de Sucesso</strong> está liberado e as aulas já estão te esperando.</p>
       <div class="scroll-hint">
         Role a página para baixo e escolha seu módulo <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -59,102 +57,12 @@
     </div>
   </div>
 
-  <!-- MODULES SCROLL -->
+  <!-- MODULES SCROLL (gerado pelo script.js) -->
   <div class="section" id="modulos">
     <div class="s-header">
       <div class="s-title">MÓDULOS <small>Escolha por onde começar</small></div>
     </div>
-    <div class="mod-scroll" id="modScroll">
-      <div class="mod-card" data-mod="0">
-        <div class="mod-thumb"><img
-            src="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/app-images/heroes/c13e1691-31dd-4f9d-872c-7d768df677e3.png"
-            alt="Módulo 1" loading="lazy" />
-          <div class="mod-overlay"></div><span class="mod-badge">Em andamento</span>
-        </div>
-        <div class="mod-info">
-          <div class="mod-num">Módulo 1</div>
-          <div class="mod-name">Fundamentos</div>
-          <div class="mod-meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <polygon points="5 3 19 12 5 21" />
-            </svg> 5 aulas</div>
-          <div class="mod-prog">
-            <div class="mod-prog-bar">
-              <div class="mod-prog-fill" style="width:40%"></div>
-            </div><span class="mod-prog-pct">40%</span>
-          </div>
-        </div>
-      </div>
-      <div class="mod-card" data-mod="1">
-        <div class="mod-thumb">
-          <div class="mod-overlay"></div><span class="mod-badge">Próximo</span>
-        </div>
-        <div class="mod-info">
-          <div class="mod-num">Módulo 2</div>
-          <div class="mod-name">Primeiras Peças</div>
-          <div class="mod-meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <polygon points="5 3 19 12 5 21" />
-            </svg> 6 aulas</div>
-        </div>
-      </div>
-      <div class="mod-card locked">
-        <div class="mod-thumb">
-          <div class="mod-lock"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)"
-              stroke-width="2">
-              <rect x="3" y="11" width="18" height="11" rx="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg></div>
-        </div>
-        <div class="mod-info">
-          <div class="mod-num">Módulo 3</div>
-          <div class="mod-name">Peças Avançadas</div>
-          <div class="mod-meta">5 aulas</div>
-        </div>
-      </div>
-      <div class="mod-card locked">
-        <div class="mod-thumb">
-          <div class="mod-lock"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)"
-              stroke-width="2">
-              <rect x="3" y="11" width="18" height="11" rx="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg></div>
-        </div>
-        <div class="mod-info">
-          <div class="mod-num">Módulo 4</div>
-          <div class="mod-name">Precificação</div>
-          <div class="mod-meta">4 aulas</div>
-        </div>
-      </div>
-      <div class="mod-card locked">
-        <div class="mod-thumb">
-          <div class="mod-lock"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)"
-              stroke-width="2">
-              <rect x="3" y="11" width="18" height="11" rx="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg></div>
-        </div>
-        <div class="mod-info">
-          <div class="mod-num">Módulo 5</div>
-          <div class="mod-name">Vendas Online</div>
-          <div class="mod-meta">5 aulas</div>
-        </div>
-      </div>
-      <div class="mod-card locked">
-        <div class="mod-thumb">
-          <div class="mod-lock"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)"
-              stroke-width="2">
-              <rect x="3" y="11" width="18" height="11" rx="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg></div>
-        </div>
-        <div class="mod-info">
-          <div class="mod-num">Módulo 6</div>
-          <div class="mod-name">Instagram</div>
-          <div class="mod-meta">5 aulas</div>
-        </div>
-      </div>
-    </div>
+    <div class="mod-scroll" id="modScroll"></div>
   </div>
 
   <!-- PLAYER + LESSON LIST -->
@@ -191,7 +99,7 @@
             stroke="currentColor" stroke-width="2">
             <path d="M19 12H5M12 5l-7 7 7 7" />
           </svg> Aula Anterior</button>
-        <span class="les-ctr" id="lesCtr">1 / 40</span>
+        <span class="les-ctr" id="lesCtr">1 / 14</span>
         <button class="nav-btn next" id="btnNext">Próxima Aula <svg width="16" height="16" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7" />
@@ -199,50 +107,12 @@
       </div>
     </div>
 
-    <!-- LESSON LIST LATERAl -->
+    <!-- LESSON LIST LATERAL (gerado pelo script.js) -->
     <div class="les-panel">
       <div class="lp-head">
-        <h3>Resumo de Aulas</h3><span id="lpCount">2/40</span>
+        <h3>Resumo de Aulas</h3><span id="lpCount">0/14</span>
       </div>
-      <div class="les-list-wrap">
-        <div class="mod-divider">Módulo 1 — Fundamentos</div>
-        <div class="les active" data-idx="0"><span class="les-chk done"><svg width="10" height="10" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="3">
-              <polyline points="20 6 9 17 4 12" />
-            </svg></span><span class="les-ttl">Boas-vindas ao curso</span><span class="les-dur">8min</span></div>
-        <div class="les" data-idx="1"><span class="les-chk done"><svg width="10" height="10" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="3">
-              <polyline points="20 6 9 17 4 12" />
-            </svg></span><span class="les-ttl">Materiais necessários</span><span class="les-dur">12min</span></div>
-        <div class="les" data-idx="2"><span class="les-chk"></span><span class="les-ttl">Nó básico (Square
-            Knot)</span><span class="les-dur">15min</span></div>
-        <div class="les" data-idx="3"><span class="les-chk"></span><span class="les-ttl">Nó espiral</span><span
-            class="les-dur">10min</span></div>
-        <div class="les" data-idx="4"><span class="les-chk"></span><span class="les-ttl">Combinações de nós</span><span
-            class="les-dur">18min</span></div>
-
-        <div class="mod-divider">Módulo 2 — Primeiras Peças</div>
-        <div class="les" data-idx="5"><span class="les-chk"></span><span class="les-ttl">Porta-copos</span><span
-            class="les-dur">20min</span></div>
-        <div class="les" data-idx="6"><span class="les-chk"></span><span class="les-ttl">Sousplat básico</span><span
-            class="les-dur">22min</span></div>
-        <div class="les" data-idx="7"><span class="les-chk"></span><span class="les-ttl">Mini quadro</span><span
-            class="les-dur">25min</span></div>
-        <div class="les" data-idx="8"><span class="les-chk"></span><span class="les-ttl">Porta-vasos simples</span><span
-            class="les-dur">18min</span></div>
-        <div class="les" data-idx="9"><span class="les-chk"></span><span class="les-ttl">Chaveiro decorativo</span><span
-            class="les-dur">12min</span></div>
-        <div class="les" data-idx="10"><span class="les-chk"></span><span class="les-ttl">Acabamento</span><span
-            class="les-dur">10min</span></div>
-
-        <div class="mod-divider">Módulo 3 — Peças Avançadas</div>
-        <div class="les locked" data-idx="11"><span class="les-chk"></span><span class="les-ttl">Painel de
-            parede</span><span class="les-dur">35min</span></div>
-        <div class="les locked" data-idx="12"><span class="les-chk"></span><span class="les-ttl">Vaso
-            suspenso</span><span class="les-dur">30min</span></div>
-        <div class="les locked" data-idx="13"><span class="les-chk"></span><span class="les-ttl">Cortina de
-            macramê</span><span class="les-dur">28min</span></div>
-      </div>
+      <div class="les-list-wrap"></div>
     </div>
   </div>
 
