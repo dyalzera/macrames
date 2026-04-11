@@ -5,43 +5,97 @@
    DADOS DO CURSO — EDITE AQUI PARA ADICIONAR MODULOS E AULAS
 
    TIPOS DE VIDEO SUPORTADOS:
-   YouTube:     'https://www.youtube.com/embed/SEU_CODIGO'
-   Vimeo:       'https://player.vimeo.com/video/SEU_CODIGO'
-   Arquivo MP4: 'https://seusite.com/videos/aula1.mp4'
-   Arquivo WebM:'https://seusite.com/videos/aula1.webm'
-   Pinterest:   Baixe o video e hospede como MP4
-   Sem video:   ''  (mostra aviso para a aluna)
+   YouTube embed: 'https://www.youtube.com/embed/SEU_CODIGO'
+   YouTube direto: 'yt:SEU_VIDEO_ID'  (embed automático dentro da plataforma)
+   Vimeo:          'https://player.vimeo.com/video/SEU_CODIGO'
+   Arquivo MP4:    'https://seusite.com/videos/aula1.mp4'
+   Sem video:      ''  (mostra aviso para a aluna)
 ═══════════════════════════════════════════════════════════════ */
 
 var MODULOS = [
-  { nome: 'Fundamentos',      thumb: 'https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/app-images/heroes/c13e1691-31dd-4f9d-872c-7d768df677e3.png' },
-  { nome: 'Primeiras Peças',  thumb: '' },
-  { nome: 'Peças Avançadas',  thumb: '' },
-  { nome: 'Precificação',     thumb: '' },
-  { nome: 'Vendas Online',    thumb: '' },
-  { nome: 'Instagram',        thumb: '' }
+  { nome: 'Sousplat em crochê',    thumb: 'https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/app-images/heroes/c13e1691-31dd-4f9d-872c-7d768df677e3.png' },
+  { nome: 'Trilhos de mesa',       thumb: 'images/modulo2.png' },
+  { nome: 'Guardanapos de luxo',   thumb: 'images/modulo3.png' }
 ];
 
 var AULAS = [
-  // ---- Módulo 1 — Fundamentos ----
-  { modulo: 0, titulo: 'Boas-vindas ao curso',       dur: '8min',  video: 'https://www.youtube.com/embed/tgbNymZ7vqY' },
-  { modulo: 0, titulo: 'Materiais necessários',      dur: '12min', video: 'https://www.youtube.com/embed/tgbNymZ7vqY' },
-  { modulo: 0, titulo: 'Nó básico (Square Knot)',    dur: '15min', video: 'https://player.vimeo.com/video/76979871' },
-  { modulo: 0, titulo: 'Nó espiral',                 dur: '10min', video: '' },
-  { modulo: 0, titulo: 'Combinações de nós',         dur: '18min', video: '' },
+  // ---- Módulo 1 — Sousplat em crochê ----
+  { modulo: 0, titulo: 'Centro de Mesa Tulipas',          dur: '', video: 'https://player.vimeo.com/video/1173144190' },
+  { modulo: 0, titulo: 'Sousplat Americano Retangular',   dur: '', video: 'https://player.vimeo.com/video/1173143862' },
+  { modulo: 0, titulo: 'Sousplat Canoa',                  dur: '', video: 'https://player.vimeo.com/video/1173143675' },
+  { modulo: 0, titulo: 'Sousplat Americano Luxo',         dur: '', video: 'https://player.vimeo.com/video/1173144316' },
+  { modulo: 0, titulo: 'Trilho de Mesa PREMIUM',          dur: '', video: 'https://player.vimeo.com/video/1173144015' },
+  { modulo: 0, titulo: 'Sousplat Americano Básico',       dur: '', video: 'https://player.vimeo.com/video/1173144510' },
+  { modulo: 0, titulo: 'Sousplat Tulipas',                dur: '', video: 'https://player.vimeo.com/video/1173144700' },
+  { modulo: 0, titulo: 'Sousplat Folhagem',               dur: '', video: 'yt:YzGNAfMyEhQ' },
+  { modulo: 0, titulo: 'Sousplat Borboleta',              dur: '', video: 'yt:Al3afD4mF6I' },
+  { modulo: 0, titulo: 'Sousplat Tulipas Econômico',      dur: '', video: 'yt:B9lrvuXlwLc' },
+  { modulo: 0, titulo: 'Sousplat TULIPA Econômico 2',     dur: '', video: 'yt:qoH0fAc6fsE' },
+  { modulo: 0, titulo: 'Sousplat Ágape',                  dur: '', video: 'yt:Cbh1dM_rdSo' },
+  { modulo: 0, titulo: 'Sousplat Clássico de Crochê',     dur: '', video: 'yt:PeoJywAji-E' },
+  { modulo: 0, titulo: 'Sousplat de Crochê Lovely',       dur: '', video: 'yt:_-bkazJ6jro' },
+  { modulo: 0, titulo: 'Crochê Folha Supra Corações',     dur: '', video: 'yt:bzuAnOOrImY' },
+  { modulo: 0, titulo: 'Sousplat de Crochê Luxo Fácil',   dur: '', video: 'yt:1ak-u8SxuTY' },
+  { modulo: 0, titulo: 'Sousplat em Crochê Fácil Rápido', dur: '', video: 'yt:EPx6m0l1yYQ' },
+  { modulo: 0, titulo: 'Sousplat de Corações',            dur: '', video: 'yt:Njnpg0GNZ8w' },
+  { modulo: 0, titulo: 'Sousplat Magia Solar',            dur: '', video: 'yt:3faCMkzfs7o' },
+  { modulo: 0, titulo: 'Mandala do Amor',                 dur: '', video: 'yt:oePQ2Eq3IL0' },
+  { modulo: 0, titulo: 'Sousplat Simples de Crochê',               dur: '', video: 'yt:7LHOQHesIFk' },
+  { modulo: 0, titulo: 'Sousplat com Glamour',                     dur: '', video: 'yt:lF1C1bRw_8k' },
+  { modulo: 0, titulo: 'Sousplat Coleção Florescer',               dur: '', video: 'yt:nTrO_wQgKWQ' },
+  { modulo: 0, titulo: 'Sousplat Sonho Real',                      dur: '', video: 'yt:pUDHdYwZoHY' },
+  { modulo: 0, titulo: 'Sousplat Tulipas Imperial',                dur: '', video: 'yt:2A7ZlOxI0Gk' },
+  { modulo: 0, titulo: 'Sousplat de Crochê Tulipa',                dur: '', video: 'yt:2OPVMeItRKg' },
+  { modulo: 0, titulo: 'Sousplat Turco Luxo',                      dur: '', video: 'yt:iunqhZkafpg' },
+  { modulo: 0, titulo: 'Sousplat Lovely Luxo',                     dur: '', video: 'yt:Dk7vFl8z7iw' },
+  { modulo: 0, titulo: 'Sousplat D\'Luxo',                         dur: '', video: 'yt:R8HEQFdOdNs' },
+  { modulo: 0, titulo: 'Sousplat Brilho das Estrelas',             dur: '', video: 'yt:In5azw1q5Ro' },
+  { modulo: 0, titulo: 'Sousplat Pureza',                          dur: '', video: 'yt:-eqczmzYtCI' },
+  { modulo: 0, titulo: 'Sousplat de Crochê Conchas',               dur: '', video: 'yt:PzclUV3rn74' },
+  { modulo: 0, titulo: 'Sousplat Turco Luxo Passo a Passo',        dur: '', video: 'yt:gv34Q5TT4io' },
+  { modulo: 0, titulo: 'Sousplat Crochê Fácil e Lindo',            dur: '', video: 'yt:1TfJBIohRNE' },
+  { modulo: 0, titulo: 'Sousplat Queridinho do Momento',           dur: '', video: 'yt:zMU0NDGEZrE' },
+  { modulo: 0, titulo: 'Centro de Mesa Pavão',                     dur: '', video: 'yt:IhM9rsWdEtY' },
+  { modulo: 0, titulo: 'Supla Fácil e Lindo',                      dur: '', video: 'yt:jsb4StKnZmY' },
+  { modulo: 0, titulo: 'Sousplat Mais Fácil Que Existe',           dur: '', video: 'yt:Zs1RptkTcbA' },
+  { modulo: 0, titulo: 'Sousplat Dual',                            dur: '', video: 'yt:b6Ajvy4yVrs' },
+  { modulo: 0, titulo: 'Sousplat Fácil, Rápido e Econômico',       dur: '', video: 'yt:0tzjd4Rp5xs' },
+  { modulo: 0, titulo: 'Sousplat Especial de Natal',               dur: '', video: 'yt:Ao_4MeTQBvg' },
+  { modulo: 0, titulo: 'Crochê Multiuso',                          dur: '', video: 'yt:8A0H8FXom1U' },
+  { modulo: 0, titulo: 'Square de Fuxico de Crochê',               dur: '', video: 'yt:mDkLj8GbOgQ' },
+  { modulo: 0, titulo: 'Sousplat/Centrinho Estrelinha',            dur: '', video: 'yt:K3N66W6f-yQ' },
+  { modulo: 0, titulo: 'Porta Copo Estrelinha',                    dur: '', video: 'yt:yvFY33qK1Wc' },
+  { modulo: 0, titulo: 'Sousplat Fácil',                           dur: '', video: 'yt:b1APTNtIwBo' },
+  { modulo: 0, titulo: 'Sousplat Fácil e Charmoso',                dur: '', video: 'yt:1fV7u_jP_vE' },
+  { modulo: 0, titulo: 'Jogo Americano de Crochê Fácil',           dur: '', video: 'yt:ZY049emHLFE' },
+  { modulo: 0, titulo: 'Porta Copos Lindo e Fácil',                dur: '', video: 'yt:Dz3ybiqHKTw' },
+  { modulo: 0, titulo: 'Sousplat Charme na Mesa',                  dur: '', video: 'yt:9JqYD6eIjJM' },
+  { modulo: 0, titulo: 'Crochê Fácil para Móveis',                 dur: '', video: 'yt:g5e31CThGFs' },
+  { modulo: 0, titulo: 'Sousplat ou Toalhinha de Crochê',          dur: '', video: 'yt:GpXoW8X5OOQ' },
+  { modulo: 0, titulo: 'Crochê Lindo na Cor Azul',                 dur: '', video: 'yt:ZexRovcrduQ' },
 
-  // ---- Módulo 2 — Primeiras Peças ----
-  { modulo: 1, titulo: 'Porta-copos',                dur: '20min', video: '' },
-  { modulo: 1, titulo: 'Sousplat básico',            dur: '22min', video: '' },
-  { modulo: 1, titulo: 'Mini quadro',                dur: '25min', video: '' },
-  { modulo: 1, titulo: 'Porta-vasos simples',        dur: '18min', video: '' },
-  { modulo: 1, titulo: 'Chaveiro decorativo',        dur: '12min', video: '' },
-  { modulo: 1, titulo: 'Finalização e acabamento',   dur: '10min', video: '' },
+  // ---- Módulo 2 — Trilhos de mesa ----
+  { modulo: 1, titulo: 'Trilho de Mesa Flor de Crochê',          dur: '', video: 'yt:WESSABSZFKY' },
+  { modulo: 1, titulo: 'Trilho de Mesa Elegância',               dur: '', video: 'yt:ouuktE7w2d0' },
+  { modulo: 1, titulo: 'Trilho de Mesa em Crochê Sonho Real',    dur: '', video: 'yt:m8GGyzJ_Gjw' },
+  { modulo: 1, titulo: 'Trilho de Mesa de Crochê Passo a Passo', dur: '', video: 'yt:kE-jUv5I2lc' },
+  { modulo: 1, titulo: 'Trilho de Mesa Ipanema',                 dur: '', video: 'yt:RKDW90d7nBY' },
+  { modulo: 1, titulo: 'Trilho de Mesa em Crochê Triunfo',       dur: '', video: 'yt:se_aVKivxFc' },
+  { modulo: 1, titulo: 'Trilho de Mesa Primavera',               dur: '', video: 'yt:DKIh9pWnSis' },
+  { modulo: 1, titulo: 'Trilho de Mesa em Crochê Estilo Turco',  dur: '', video: 'yt:ik1-1ThZmRk' },
+  { modulo: 1, titulo: 'Trilho de Mesa em Crochê Luna',          dur: '', video: 'yt:zsXITrwNU30' },
 
-  // ---- Módulo 3 — Peças Avançadas ----
-  { modulo: 2, titulo: 'Painel de parede',           dur: '35min', video: '' },
-  { modulo: 2, titulo: 'Vaso suspenso',              dur: '30min', video: '' },
-  { modulo: 2, titulo: 'Cortina de macramê',         dur: '28min', video: '' }
+  // ---- Módulo 3 — Guardanapos de luxo ----
+  { modulo: 2, titulo: 'Guardanapo com Canto Mitrado Super Fácil',       dur: '', video: 'yt:oTfQqtPo8Aw' },
+  { modulo: 2, titulo: 'Guardanapo de Canto Mitrado com Acabamento',     dur: '', video: 'yt:slv5GmUkZ-8' },
+  { modulo: 2, titulo: '5 Dobraduras Elegantes de Guardanapos',          dur: '', video: 'yt:_Rt3R-3kv3E' },
+  { modulo: 2, titulo: 'Como Fazer Guardanapo Perfeito',                 dur: '', video: 'yt:Domb7vD_Yzs' },
+  { modulo: 2, titulo: 'Porta Guardanapo Luxo',                          dur: '', video: 'yt:aTwbNVMiZs4' },
+  { modulo: 2, titulo: 'Dobradura de Guardanapo Elegante',               dur: '', video: 'yt:dknCRDxK8NY' },
+  { modulo: 2, titulo: 'Como Dobrar um Guardanapo de Poinsétia',         dur: '', video: 'yt:ClI4n5WxKTs' },
+  { modulo: 2, titulo: 'Flor de Lótus e Rosa com Guardanapo de Pano',   dur: '', video: 'yt:IRA9_z0lTLI' },
+  { modulo: 2, titulo: '5 Ideias de Dobras de Guardanapos para o Natal', dur: '', video: 'yt:GmTNaDxICgI' },
+  { modulo: 2, titulo: 'Aprenda a Dobra Leque para Guardanapos',         dur: '', video: 'yt:dS4vHe_8KEM' }
 ];
 
 /* ═══════════════════════════════════════════════════════════════
@@ -49,6 +103,7 @@ var AULAS = [
 ═══════════════════════════════════════════════════════════════ */
 var STORAGE_KEY = 'macrames_progresso';
 var cur = 0;
+var openMods = new Set([0]); // módulos com lista aberta na sidebar
 var done = carregarProgresso();
 
 function carregarProgresso() {
@@ -74,16 +129,13 @@ function pad2(n) { return n < 10 ? '0' + n : '' + n; }
 
 function tipoVideo(url) {
   if (!url) return 'nenhum';
+  if (/^yt:/i.test(url)) return 'youtube-embed';
   if (/\.(mp4|webm|mov|ogg)(\?|#|$)/i.test(url)) return 'arquivo';
   return 'iframe';
 }
 
 function moduloLivre(idx) {
-  if (idx === 0) return true;
-  for (var i = 0; i < AULAS.length; i++) {
-    if (AULAS[i].modulo === idx - 1 && !done.has(i)) return false;
-  }
-  return true;
+  return true; // todos os módulos liberados
 }
 
 function aulasDoModulo(idx) {
@@ -152,9 +204,13 @@ function renderModulos() {
       '</div>';
 
     if (livre && totalMod > 0) {
-      (function(firstIdx) {
-        card.addEventListener('click', function() { sel(firstIdx); });
-      })(aulas[0]);
+      (function(firstIdx, modI) {
+        card.addEventListener('click', function() {
+          openMods.clear();       // fecha todos os módulos na sidebar
+          openMods.add(modI);     // abre só o módulo clicado
+          sel(firstIdx);          // carrega 1ª aula + mostra player
+        });
+      })(aulas[0], idx);
     }
 
     container.appendChild(card);
@@ -164,25 +220,82 @@ function renderModulos() {
 /* ═══════════════════════════════════════════════════════════════
    RENDER — LISTA DE AULAS (sidebar)
 ═══════════════════════════════════════════════════════════════ */
+function showPlayer() {
+  var pa = document.getElementById('playerArea');
+  if (!pa) return;
+  if (pa.style.display === 'none' || pa.style.display === '') {
+    pa.style.display = '';
+    pa.style.opacity = '0';
+    pa.style.transition = 'opacity .4s ease';
+    setTimeout(function() { pa.style.opacity = '1'; }, 10);
+  }
+}
+
+function hidePlayer() {
+  var pa = document.getElementById('playerArea');
+  if (!pa) return;
+  pa.style.transition = 'opacity .3s ease';
+  pa.style.opacity = '0';
+  setTimeout(function() { pa.style.display = 'none'; }, 300);
+}
+
 function renderAulas() {
+  // garante que o módulo da aula atual está sempre aberto
+  openMods.add(AULAS[cur].modulo);
+
   var container = document.querySelector('.les-list-wrap');
   container.innerHTML = '';
   var ultimoMod = -1;
+  var currentGroup = null;
 
   AULAS.forEach(function(aula, idx) {
     if (aula.modulo !== ultimoMod) {
       ultimoMod = aula.modulo;
+      var modIdx = ultimoMod;
+      var isOpen = openMods.has(modIdx);
+
+      // --- cabeçalho do módulo (clicável) ---
       var div = document.createElement('div');
-      div.className = 'mod-divider';
-      div.textContent = 'Módulo ' + (ultimoMod + 1) + ' — ' + MODULOS[ultimoMod].nome;
+      div.className = 'mod-divider mod-divider-toggle';
+
+      var icon = document.createElement('span');
+      icon.className = 'mod-toggle-icon';
+      icon.textContent = isOpen ? '▲' : '▼';
+
+      div.appendChild(document.createTextNode('Módulo ' + (modIdx + 1) + ' — ' + MODULOS[modIdx].nome));
+      div.appendChild(icon);
+
+      // --- grupo colapsável ---
+      currentGroup = document.createElement('div');
+      currentGroup.className = 'mod-group' + (isOpen ? ' open' : '');
+
+      (function(m, grp, ic) {
+        div.addEventListener('click', function() {
+          if (openMods.has(m)) {
+            // Fechar
+            openMods.delete(m);
+            grp.classList.remove('open');
+            ic.textContent = '▼';
+            hidePlayer();
+          } else {
+            // Abrir: seleciona 1ª aula do módulo e mostra player
+            openMods.add(m);
+            grp.classList.add('open');
+            ic.textContent = '▲';
+            var first = AULAS.findIndex(function(a) { return a.modulo === m; });
+            if (first >= 0) sel(first);
+          }
+        });
+      })(modIdx, currentGroup, icon);
+
       container.appendChild(div);
+      container.appendChild(currentGroup);
     }
 
-    var livre = moduloLivre(aula.modulo);
     var concluida = done.has(idx);
 
     var el = document.createElement('div');
-    el.className = 'les' + (idx === cur ? ' active' : '') + (!livre ? ' locked' : '');
+    el.className = 'les' + (idx === cur ? ' active' : '');
     el.setAttribute('data-idx', idx);
 
     el.innerHTML =
@@ -190,13 +303,11 @@ function renderAulas() {
       '<span class="les-ttl">' + aula.titulo + '</span>' +
       '<span class="les-dur">' + aula.dur + '</span>';
 
-    if (livre) {
-      (function(i) {
-        el.addEventListener('click', function() { sel(i); });
-      })(idx);
-    }
+    (function(i) {
+      el.addEventListener('click', function() { sel(i); });
+    })(idx);
 
-    container.appendChild(el);
+    currentGroup.appendChild(el);
   });
 }
 
@@ -226,7 +337,18 @@ function playVideo() {
 
   var tipo = tipoVideo(url);
 
-  if (tipo === 'arquivo') {
+  if (tipo === 'youtube-embed') {
+    // YouTube via embed direto dentro da plataforma
+    var videoId = url.replace(/^yt:/i, '');
+    var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+    var iframe = document.createElement('iframe');
+    iframe.id = 'vEmbed';
+    iframe.src = embedUrl;
+    iframe.frameBorder = '0';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    vScreen.appendChild(iframe);
+  } else if (tipo === 'arquivo') {
     var video = document.createElement('video');
     video.id = 'vEmbed';
     video.src = url;
@@ -256,6 +378,9 @@ function sel(i) {
   if (i < 0 || i >= AULAS.length) return;
   cur = i;
   var aula = AULAS[i];
+
+  // Revela o player na primeira vez que a pessoa clicar em uma aula
+  showPlayer();
 
   document.getElementById('vLbl').textContent = 'Módulo ' + pad2(aula.modulo + 1) + ' · Aula ' + pad2(i + 1);
   document.getElementById('vTtl').textContent = aula.titulo;
