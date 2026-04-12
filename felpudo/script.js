@@ -367,7 +367,11 @@ function playVideo() {
     var sep = url.indexOf('?') > -1 ? '&' : '?';
     var iframe = document.createElement('iframe');
     iframe.id = 'vEmbed';
-    iframe.src = url + sep + 'autoplay=1';
+    if (url.includes('drive.google.com')) {
+      iframe.src = url; // do not append autoplay
+    } else {
+      iframe.src = url + sep + 'autoplay=1';
+    }
     iframe.frameBorder = '0';
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     iframe.allowFullscreen = true;
