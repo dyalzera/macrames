@@ -14,8 +14,8 @@
 
 var MODULOS = [
   { nome: 'Sousplat em crochê',    thumb: 'https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/app-images/heroes/c13e1691-31dd-4f9d-872c-7d768df677e3.png' },
-  { nome: 'Trilhos de mesa',       thumb: 'images/modulo2.png' },
-  { nome: 'Guardanapos de luxo',   thumb: 'images/modulo3.png' }
+  { nome: 'Trilhos de mesa',       thumb: '../images/modulo2.png' },
+  { nome: 'Guardanapos de luxo',   thumb: '../images/modulo3.png' }
 ];
 
 var AULAS = [
@@ -470,5 +470,81 @@ renderModulos();
 renderAulas();
 updDone();
 updProg();
+
+
+
+/* ═══════════════════════════════════════════════════════════════
+   PIX COPY LOGIC
+═══════════════════════════════════════════════════════════════ */
+const pixKeyObj = document.getElementById('pixKey');
+if (pixKeyObj) {
+  pixKeyObj.classList.add('copyable');
+  pixKeyObj.innerHTML += ' <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+  
+  pixKeyObj.addEventListener('click', function() {
+    const textNodeMatches = Array.from(this.childNodes)
+      .filter(node => node.nodeType === 3) // Text nodes
+      .map(node => node.textContent.trim())
+      .join('');
+    // Safely copy the text
+    const keyToCopy = "60.565.597/0001-43"; 
+    
+    // Copy securely fallback
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(keyToCopy).then(() => {
+        showToast('Chave Pix copiada com sucesso!');
+      }).catch(err => {
+        // Fallback or ignore
+        fallbackCopy(keyToCopy);
+      });
+    } else {
+      fallbackCopy(keyToCopy);
+    }
+  });
+}
+
+function fallbackCopy(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    if(successful) showToast('Chave Pix copiada com sucesso!');
+  } catch (err) {
+    console.error('Fallback: Oops, unable to copy', err);
+  }
+
+  document.body.removeChild(textArea);
+}
+
+function showToast(msg) {
+  let toast = document.getElementById('pixToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'pixToast';
+    toast.className = 'toast-notice';
+    toast.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> ' + msg;
+    document.body.appendChild(toast);
+  } else {
+    toast.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> ' + msg;
+  }
+  
+  // Force reflow
+  void toast.offsetWidth;
+  toast.classList.add('show');
+  
+  if (toast.to) clearTimeout(toast.to);
+  toast.to = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+}
 
 })();

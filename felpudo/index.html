@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Área de Membros — Arte de Felpudo" />
+  <title>Arte de Felpudo — Área de Membros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css?v=3" />
+</head>
+
+<body>
+
+
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span style="font-size:1.7rem;line-height:1;display:flex;align-items:center;">✨</span>
+        <span>Ateliê da Fernanda</span>
+      </a>
+      <div class="nav-switcher">
+        <a href="../sousplat/" class="ns-btn">Sousplat</a>
+        <a href="../felpudo/" class="ns-btn active">Felpudos</a>
+      </div>
+      <div class="nav-mid">
+        <span style="display:none" id="navPct">0%</span>
+        <div class="nav-pbar">
+          <div class="nav-pfill" id="navPfill"></div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- WELCOME BANNER -->
+  <div class="welcome">
+    <div class="welcome-box">
+      <div class="welcome-banner-img">
+        <img src="../images/banner.png" alt="Macramês de Sucesso" />
+        <div class="welcome-banner-overlay"></div>
+        <div class="welcome-banner-content">
+          <h1>Bem-vinda ao Arte de Felpudo ✨</h1>
+          <p>Sua jornada para transformar fio felpudo em peças lucrativas começa aqui. 💛 Curso feito com muito carinho para te ensinar, passo a passo!</p>
+          <a href="#modulos" class="scroll-hint">
+            Role a página para baixo e escolha seu módulo <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <polyline points="19 12 12 19 5 12" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD PIX -->
+  <div class="section">
+    <div class="pix-card">
+      <div class="pix-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="56" height="56">
+          <circle cx="256" cy="256" r="256" fill="#32BCAD"/>
+          <g fill="white">
+            <!-- Topo -->
+            <rect x="211" y="140" width="90" height="90" rx="18" transform="rotate(45 256 185)"/>
+            <!-- Baixo -->
+            <rect x="211" y="282" width="90" height="90" rx="18" transform="rotate(45 256 327)"/>
+            <!-- Esquerda -->
+            <rect x="140" y="211" width="90" height="90" rx="18" transform="rotate(45 185 256)"/>
+            <!-- Direita -->
+            <rect x="282" y="211" width="90" height="90" rx="18" transform="rotate(45 327 256)"/>
+          </g>
+        </svg>
+      </div>
+      <h2 class="pix-card-title">Pagamento via Pix</h2>
+      <p class="pix-card-sub">Realize o pagamento usando os dados abaixo e envie o comprovante no WhatsApp.</p>
+      <div class="pix-card-dados">
+        <div class="pix-dado">
+          <span class="pix-dado-label">Chave Pix</span>
+          <!-- ✏️ EDITE AQUI: substitua pelo seu CPF, e-mail ou chave aleatória -->
+          <span class="pix-dado-val" id="pixKey">60.565.597/0001-43</span>
+        </div>
+        <div class="pix-dado">
+          <span class="pix-dado-label">Banco</span>
+          <!-- ✏️ EDITE AQUI: nome do seu banco -->
+          <span class="pix-dado-val">C6 S.A.</span>
+        </div>
+        <div class="pix-dado">
+          <span class="pix-dado-label">Favorecido</span>
+          <!-- ✏️ EDITE AQUI: seu nome completo -->
+          <span class="pix-dado-val">60.565.597 RICHARD GABRIEL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MATERIAIS DE APOIO -->
+  <div class="section">
+    <div class="apoio-card">
+      <div class="apoio-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="1" y="3" width="15" height="13" rx="2"></rect>
+          <path d="M16 8h4l3 3v5h-7V8z"></path>
+          <circle cx="5.5" cy="18.5" r="2.5"></circle>
+          <circle cx="18.5" cy="18.5" r="2.5"></circle>
+        </svg>
+      </div>
+      
+      <div class="apoio-content">
+        <div class="apoio-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.6 5.4L19 9l-5.4 1.6L12 16l-1.6-5.4L5 9l5.4-1.6z"/></svg> 
+          DESTAQUE + BÔNUS
+        </div>
+        <h2 class="apoio-title">📋 Materiais de Apoio & Bônus</h2>
+        <p class="apoio-desc" style="margin-bottom: 16px;">Acesse a pasta geral com materiais extras ou baixe cada bônus separadamente clicando nos botões abaixo:</p>
+        
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:8px;">
+          <!-- Drive Geral -->
+          <a href="https://drive.google.com/file/d/1pesY3VbfadMkzq6ifBo_MI2-CNprcoxt/view" target="_blank" class="apoio-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg>
+            Pasta Completa (Drive)
+          </a>
+          
+          <!-- Bonus PDFs Outline -->
+          <a href="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/lesson-files/pdfs/58c07be0-66da-43d4-b18a-d461f3b12a8f.pdf" target="_blank" class="apoio-btn" style="background:transparent; color:var(--green); border:2px solid var(--green);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            Detalhes que Encantam
+          </a>
+          
+          <a href="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/lesson-files/pdfs/e99ab42e-04f8-4461-a643-daa0cd571fd6.pdf" target="_blank" class="apoio-btn" style="background:transparent; color:var(--green); border:2px solid var(--green);">
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            20 Peças Mais Vendidas
+          </a>
+          
+          <a href="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/lesson-files/pdfs/e85a0470-1552-4041-a564-a8ffb9201d62.pdf" target="_blank" class="apoio-btn" style="background:transparent; color:var(--green); border:2px solid var(--green);">
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            Arte Terapêutica
+          </a>
+          
+          <a href="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/lesson-files/pdfs/8a28ebd9-1e0f-450c-8ae2-7292f42fd4b0.pdf" target="_blank" class="apoio-btn" style="background:transparent; color:var(--green); border:2px solid var(--green);">
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            Método 3 Movimentos
+          </a>
+          
+          <a href="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/lesson-files/pdfs/57c99a49-0d84-461a-bc89-209daefe1880.pdf" target="_blank" class="apoio-btn" style="background:transparent; color:var(--green); border:2px solid var(--green);">
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            Fotos que Vendem
+          </a>
+          
+          <a href="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/lesson-files/pdfs/04307387-546b-408c-a29c-3d04e9ef1bfd.pdf" target="_blank" class="apoio-btn" style="background:transparent; color:var(--green); border:2px solid var(--green);">
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            Lista de Fornecedores Extra
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- MODULES SCROLL (gerado pelo script.js) -->
+  <div class="section" id="modulos">
+    <div class="s-header">
+      <div class="s-title">MÓDULOS <small>Escolha por onde começar</small></div>
+    </div>
+    <div class="mod-scroll" id="modScroll"></div>
+  </div>
+
+  <!-- PLAYER + LESSON LIST -->
+  <div class="player-area" id="playerArea" style="display:none">
+    <div class="vp-wrap">
+      <div class="vp-screen">
+        <div class="vp-placeholder" id="vPlaceholder">
+          <div class="pi" id="vPlayBtn" role="button" tabindex="0" aria-label="Reproduzir">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M8 5v14l11-7L8 5z" fill="currentColor" />
+            </svg>
+          </div>
+          <p>Clique aqui para começar a aula</p>
+        </div>
+      </div>
+      <div class="vp-bottom">
+        <div class="vp-info">
+          <div class="vp-lbl" id="vLbl">Módulo 01 · Aula 01</div>
+          <div class="vp-ttl" id="vTtl">Boas-vindas ao curso</div>
+        </div>
+        <div class="vp-acts">
+          <button class="btn-sm" id="btnDone"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg> Marcar concluída</button>
+          <button class="btn-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg> Salvar</button>
+        </div>
+      </div>
+      <div class="vp-nav">
+        <button class="nav-btn" id="btnPrev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg> Aula Anterior</button>
+        <span class="les-ctr" id="lesCtr">1 / 14</span>
+        <button class="nav-btn next" id="btnNext">Próxima Aula <svg width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg></button>
+      </div>
+    </div>
+
+    <!-- LESSON LIST LATERAL (gerado pelo script.js) -->
+    <div class="les-panel">
+      <div class="lp-head">
+        <h3>Resumo de Aulas</h3><span id="lpCount">0/14</span>
+      </div>
+      <div class="les-list-wrap"></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <div class="s-header">
+      <div class="s-title">SOBRE O CURSO</div>
+    </div>
+    <div class="about-box">
+      <div class="about-grid">
+        <div>
+          <p style="font-size:1rem;color:var(--ink-2);line-height:1.7;margin-bottom:20px">O curso Artes de Felpudos foi desenvolvido com carinho para pegar você pela mão, do zero até as suas primeiras vendas.</p>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div class="feat">
+              <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21" /></svg></div>
+              <div class="feat-txt">
+                <h4>Vídeos claros e pausados</h4>
+                <p>Sem pressa. Você aprende no seu ritmo.</p>
+              </div>
+            </div>
+            <div class="feat">
+              <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                </svg></div>
+              <div class="feat-txt">
+                <h4>Suporte direto</h4>
+                <p>Grupo no WhatsApp com a professora.</p>
+              </div>
+            </div>
+            <div class="feat">
+              <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg></div>
+              <div class="feat-txt">
+                <h4>Para sempre seu</h4>
+                <p>Assista daqui a anos. Acesso vitalício.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-img-wrap"><img
+            src="https://opsofzntidohsxbyqmbm.supabase.co/storage/v1/object/public/app-images/heroes/c13e1691-31dd-4f9d-872c-7d768df677e3.png"
+            alt="Macramê" loading="lazy" /></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <div class="s-header">
+      <div class="s-title">AJUDA E INFORMAÇÕES</div>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq">
+        <div class="faq-q"><span class="faq-qt">Como funciona pelo celular?</span><span class="faq-ch"><svg width="18"
+              height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg></span></div>
+        <div class="faq-a">
+          <p>A plataforma foi pensada para você. Pode assistir todas as aulas pelo seu celular tranquilamente de onde
+            estiver.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-q"><span class="faq-qt">E se eu não entender algum nó?</span><span class="faq-ch"><svg
+              width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg></span></div>
+        <div class="faq-a">
+          <p>Você pode pausar, voltar a aula quantas vezes precisar. Além disso, a comunidade estará lá para tirar as
+            suas dúvidas.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-q"><span class="faq-qt">As próximas aulas estão travadas?</span><span class="faq-ch"><svg
+              width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg></span></div>
+        <div class="faq-a">
+          <p>Elas destravam sozinhas assim que você termina as anteriores. Isso ajuda a seguir o passo a passo certinho
+            sem confusão.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="f-logo">Arte de Felpudo</div>
+    <p class="f-copy">© 2026 Arte de Felpudo</p>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <!-- EDITE O LINK ABAIXO com o link do seu grupo do WhatsApp -->
+  <a href="https://chat.whatsapp.com/GnlYbK7Mq9JCEZk5i1NgVg?mode=gi_t"
+     target="_blank"
+     class="whatsapp-fab"
+     id="whatsappBtn"
+     aria-label="Entrar no grupo do WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js?v=6"></script>
+</body>
+
+</html>
